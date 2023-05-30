@@ -8,7 +8,7 @@ void main()
 	setlocale(LC_ALL, "ru");
 	int a;
 
-	cout << "введите чесло дяля проверки на чётность" << endl;
+	cout << "введите чесло для проверки на чётность" << endl;
 	cin >> a;
 
 	if (a %2== 0)
