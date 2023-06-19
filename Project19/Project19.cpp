@@ -1,4 +1,4 @@
-//Цикл for. Особенности.
+//Ключевое слово continue
 
 #include <iostream>
 using namespace std;
@@ -6,19 +6,18 @@ using namespace std;
 void main()
 {
 	setlocale(LC_ALL, "ru");
-	/*
-	
-	Переменую "u" мы можем иницализировать за круглыми скобками. 
-	Нужно это для работы со вторым циклом for, потому что он её не увидет если она будет в круглых скобках.
 
-	Пример:
-	int u = 0
-	for ( ; u < 34; u++)
-
-	*/
-	for (int u = 0; u < 34; u++)
+	for (int a = 0; a < 10; a++)
 	{
-		cout << "Переменная a =" << u << endl;
+
+		if (a == 5)
+		{
+			continue;
+		}
+
+		cout << "Переменная a =" << a << endl;
+
 	}
 
+	cout << "Конец цикла" << endl;
 }
